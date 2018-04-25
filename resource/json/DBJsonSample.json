@@ -1,0 +1,29 @@
+{
+     "0" : {
+        "brandName": "sampleBrand",
+        "itemId" : "sampleId0",
+        "assetPathList" : {
+            "free" : "resource/asset_bundles/sampleBrand_sampleId0_free.txt"
+        }
+    },
+    "1" : {
+        "brandName": "sampleBrand",
+        "itemId" : "sampleId1",
+        "assetPathList" : {
+            "small" : "resource/asset_bundles/sampleBrand_sampleId1_small.txt",
+            "medium" : "resource/asset_bundles/sampleBrand_sampleId1_medium.txt",
+            "large" : "resource/asset_bundles/sampleBrand_sampleId1_large.txt"
+        }
+    },
+    "2" : {
+        "brandName": "sampleBrand",
+        "itemId" : "sampleId2",
+        "assetPathList" : {
+            "s" : "resource/asset_bundles/sampleBrand_sampleId2_s.txt",
+            "m" : "resource/asset_bundles/sampleBrand_sampleId2_m.txt",
+            "l" : "resource/asset_bundles/sampleBrand_sampleId2_l.txt",
+            "xl" : "resource/asset_bundles/sampleBrand_sampleId2_xl.txt",
+            "xxl" : "resource/asset_bundles/sampleBrand_sampleId2_xxl.txt"
+        }
+    }
+}

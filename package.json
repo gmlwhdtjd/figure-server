@@ -1,0 +1,28 @@
+{
+  "name": "figure-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmlwhdtjd/figure-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gmlwhdtjd/figure-server/issues"
+  },
+  "homepage": "https://github.com/gmlwhdtjd/figure-server#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongodb": "^3.0.7"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}
