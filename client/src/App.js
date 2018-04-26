@@ -27,7 +27,6 @@ class App extends Component {
 
   _renderItems = () => {
     const itemList = this.state.itemList.map(item => {
-      console.log(item);
       return <Item 
         brandName={item.brandName} 
         itemId={item.itemId} 
