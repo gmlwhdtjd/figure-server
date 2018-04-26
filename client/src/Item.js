@@ -1,5 +1,6 @@
 import React from 'react'; 
 import PropTypes from 'prop-types'
+import Popup from 'react-popup';
 import './Item.css';
 
 function Item({brandName, itemId, itemImage, qrList}) {
@@ -12,16 +13,31 @@ function Item({brandName, itemId, itemImage, qrList}) {
                 <h1> {brandName} </h1>  
                 <h2> {itemId} </h2>
                 <div className="Item__Sizes">
-                    {Object.keys(qrList).map((key, index) => <ItemSize sizeName={key} key={index} />)}
+                    {Object.keys(qrList).map((key, index) => <ItemSize qrList={qrList} sizeName={key} key={index} />)}
                 </div>
             </div>
         </div>
     )
 }
 
-function ItemSize({sizeName}) {
+function ItemSize({qrList, sizeName}) {
     return (
-        <span className="Item__Size">{sizeName} </span>
+        <span className="Item__Size" 
+            onClick={e =>{
+                Popup.create({
+                    title: sizeName,
+                    content:  <ItemQR qrList={qrList} sizeName={sizeName}/>,
+                    className: 'alert',
+                  }, true);
+            }}>
+            {sizeName} 
+        </span>
+    )
+}
+
+function ItemQR({qrList, sizeName}) {
+    return (
+        <img className="Item__QR" src={"data:image/png;base64," + qrList[sizeName]} title={sizeName} alt={sizeName}/>
     )
 }
 
@@ -39,6 +55,7 @@ Item.propTypes = {
 }
 
 ItemSize.prototype = {
+    qrList: PropTypes.object.isRequired,
     sizeName: PropTypes.string.isRequired
 }
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'; 
+import Popup from 'react-popup';
 import './App.css';
 import Item from './Item.js'
 
@@ -42,6 +43,7 @@ class App extends Component {
   render() {
     return (
       <div className={this.state ? "App" : "App--loading"}>
+        <Popup />
         <header className="App-header">
           <h1 className="App-title">FigURe Demo</h1>
         </header>
