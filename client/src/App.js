@@ -42,6 +42,9 @@ class App extends Component {
   render() {
     return (
       <div className={this.state ? "App" : "App--loading"}>
+        <header className="App-header">
+          <h1 className="App-title">FigURe Demo</h1>
+        </header>
         {this.state.itemList ? this._renderItems() : "Loading"}
       </div>
     );
