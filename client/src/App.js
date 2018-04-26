@@ -1,20 +1,23 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react'; 
 import './App.css';
+import Item from './Item.js'
 
 class App extends Component {
-  state = {
-    response: ''
-  };
+
+  state = {};
 
   componentDidMount() {
-    this.callApi()
-      .then(res => this.setState({ response: res.express }))
-      .catch(err => console.log(err));
+    this._getItems();
   }
 
-  callApi = async () => {
-    const response = await fetch('/api/hello');
+  _getItems = () => {
+    this._callApi()
+    .then(res => this.setState({ itemList: res.items}))
+    .catch(err => console.log(err));
+  }
+
+  _callApi = async () => {
+    const response = await fetch('/api/itemList');
     const body = await response.json();
 
     if (response.status !== 200) throw Error(body.message);
@@ -22,16 +25,25 @@ class App extends Component {
     return body;
   };
 
+  _renderItems = () => {
+    const itemList = this.state.itemList.map(item => {
+      console.log(item);
+      return <Item 
+        brandName={item.brandName} 
+        itemId={item.itemId} 
+        itemImage={item.itemImage} 
+        qrList={item.qrList} 
+        key={item._id} 
+      />
+    })
+    
+    return itemList;
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          {this.state.response}
-        </p>
+      <div className={this.state ? "App" : "App--loading"}>
+        {this.state.itemList ? this._renderItems() : "Loading"}
       </div>
     );
   }

@@ -24,10 +24,25 @@ else {
     var itemBson = {};
     itemBson.brandName = item.brandName;
     itemBson.itemId = item.itemId;
+    itemBson.itemImage;
     itemBson.assetList = {};
     itemBson.qrList = {};
 
     var assetLoadFlag = true;
+
+    try {
+      // Item Image load
+      itemImage = fs.readFileSync(item.itemImagePaht) 
+      itemBson.itemImage = itemImage;
+    }
+    catch (error) {
+      console.log("Warning: Item number " + itemIndex + " was excluded during loading of the Image.");
+      console.log("         brandName: " + item.brandName);
+      console.log("         itemId: " + item.itemId);
+      console.log("         File load error: no such file or directory, open '" + item.itemImagePaht + "'");
+      console.log();
+      assetLoadFlag = false;
+    }
 
     for (var sizeName in item.assetPathList) {
       try {
