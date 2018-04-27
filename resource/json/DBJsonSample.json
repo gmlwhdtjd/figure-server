@@ -1,15 +1,15 @@
 {
      "0" : {
-        "brandName": "Sample Brand",
-        "itemId" : "Black T-shrit",
+        "brandName": "SampleBrand",
+        "itemId" : "SampleItemID_0",
         "itemImagePaht" : "resource/item_image/sampleBrand_sampleId0_Image.png",
         "assetPathList" : {
-            "free" : "resource/asset_bundles/sampleBrand_sampleId0_free.txt"
+            "free" : "resource/asset_bundles/samplebrand_sampleitemid_0_free"
         }
     },
     "1" : {
-        "brandName": "Sample Brand",
-        "itemId" : "B & W Stripe T-shrit",
+        "brandName": "SampleBrand",
+        "itemId" : "SampleItemID_1",
         "itemImagePaht" : "resource/item_image/sampleBrand_sampleId1_Image.png",
         "assetPathList" : {
             "small" : "resource/asset_bundles/sampleBrand_sampleId1_small.txt",
@@ -18,8 +18,8 @@
         }
     },
     "2" : {
-        "brandName": "Sample Brand",
-        "itemId" : "B & R Stripe T-shrit",
+        "brandName": "SampleBrand",
+        "itemId" : "SampleItemID_2",
         "itemImagePaht" : "resource/item_image/sampleBrand_sampleId2_Image.png",
         "assetPathList" : {
             "s" : "resource/asset_bundles/sampleBrand_sampleId2_s.txt",

@@ -94,19 +94,7 @@ else {
           if(error) {
             console.log(error);
           } else {    
-            // save QR code
-            for (var index in res.ops) {
-              var finishedBson = res.ops[index];
-              for (var sizeName in finishedBson.qrList) {
-                var filePath = "resource/QR_Code/QR_" + finishedBson.brandName + "_" + finishedBson.itemId + "_" + sizeName + ".png";
-                fs.writeFile(filePath, finishedBson.qrList[sizeName], function(err) {
-                  if(err)
-                    console.log(err);
-                  else 
-                    console.log("The file was saved!");
-                }); 
-              }
-            }
+            console.log("The file was saved!");
           }
         });
 
