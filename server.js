@@ -26,14 +26,12 @@ app.get('/api/itemList', (req, res) => {
 });
 
 app.get('/api/assetBundles/:itemString', (req, res) => {
-  console.log(req.param("itemString"));
   var itemInfo = req.param("itemString").split("-");
   
   var dbQuery = {};
   dbQuery.brandName = itemInfo[0];
   dbQuery.itemId = itemInfo[1];
 
-  console.log(dbQuery);
   getItemsFromDB(dbQuery)
   .then(items => {
     if(items.length == 1){
