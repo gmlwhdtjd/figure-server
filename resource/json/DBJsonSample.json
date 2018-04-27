@@ -12,9 +12,9 @@
         "itemId" : "SampleItemID_1",
         "itemImagePaht" : "resource/item_image/sampleBrand_sampleId1_Image.png",
         "assetPathList" : {
-            "small" : "resource/asset_bundles/sampleBrand_sampleId1_small.txt",
-            "medium" : "resource/asset_bundles/sampleBrand_sampleId1_medium.txt",
-            "large" : "resource/asset_bundles/sampleBrand_sampleId1_large.txt"
+            "small" : "resource/asset_bundles/samplebrand_sampleitemid_1_small",
+            "medium" : "resource/asset_bundles/samplebrand_sampleitemid_1_medium",
+            "large" : "resource/asset_bundles/samplebrand_sampleitemid_1_large"
         }
     },
     "2" : {
