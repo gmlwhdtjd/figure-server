@@ -25,18 +25,22 @@ app.get('/api/itemList', (req, res) => {
   });
 });
 
-app.get('/api/assetBundles', (req, res) => {
+app.get('/api/assetBundles/:itemString', (req, res) => {
+  console.log(req.param("itemString"));
+  var itemInfo = req.param("itemString").split("-");
+  
   var dbQuery = {};
-  dbQuery.brandName = req.query.brandName
-  dbQuery.itemId = req.query.itemId;
+  dbQuery.brandName = itemInfo[0];
+  dbQuery.itemId = itemInfo[1];
 
+  console.log(dbQuery);
   getItemsFromDB(dbQuery)
   .then(items => {
     if(items.length == 1){
       item = items[0];
-      assetBinary = item.assetList[req.query.itemSize];
+      assetBinary = item.assetList[itemInfo[2]];
       
-      var filename = req.query.brandName + '_' +req.query.itemId + '_' +req.query.itemSize;
+      var filename = itemInfo[0] + '_' + itemInfo[1] + '_' + itemInfo[2];
       console.log("Find Successed : " + filename);
       res.setHeader('Content-Disposition', 'attachment; filename=' + filename);
       res.setHeader('Content-Transfer-Encoding', 'binary');
