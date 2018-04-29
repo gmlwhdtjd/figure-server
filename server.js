@@ -1,8 +1,11 @@
 const express = require('express');
+const cors = require('cors');
 const MongoClient = require('mongodb').MongoClient;
 
 const app = express();
 const port = process.env.PORT || 5000;
+
+app.use(cors());
 
 async function getItemsFromDB(query) {
   let db = await MongoClient.connect('mongodb://localhost:27017');
