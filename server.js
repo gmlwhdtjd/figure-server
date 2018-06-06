@@ -51,7 +51,7 @@ app.get('/api/itemInfo/:itemString', (req, res) => {
     .then(items => {
         if(items.length == 1){
             item = items[0]
-            res.send({ item })
+            res.send(item)
         }
         else {
             console.log("Find false")
