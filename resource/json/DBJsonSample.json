@@ -2,6 +2,8 @@
      "0" : {
         "brandName": "SampleBrand",
         "itemId" : "SampleItemID_0",
+        "itemType" : "Shirt_Short",
+        "itemColor" : "Dark_Blue",
         "itemImagePaht" : "resource/item_image/sampleBrand_sampleId0_Image.png",
         "assetPathList" : {
             "free" : "resource/asset_bundles/samplebrand_sampleitemid_0_free"
@@ -10,6 +12,8 @@
     "1" : {
         "brandName": "SampleBrand",
         "itemId" : "SampleItemID_1",
+        "itemType" : "Shirt_Short",
+        "itemColor" : "Light_Blue",
         "itemImagePaht" : "resource/item_image/sampleBrand_sampleId1_Image.png",
         "assetPathList" : {
             "small" : "resource/asset_bundles/samplebrand_sampleitemid_1_small",
@@ -20,6 +24,8 @@
     "2" : {
         "brandName": "SampleBrand",
         "itemId" : "SampleItemID_2",
+        "itemType" : "Shirt_Short",
+        "itemColor" : "Dark_Purple",
         "itemImagePaht" : "resource/item_image/sampleBrand_sampleId2_Image.png",
         "assetPathList" : {
             "s" : "resource/asset_bundles/sampleBrand_sampleId2_s.txt",
