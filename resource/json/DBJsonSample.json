@@ -1,38 +1,24 @@
 {
      "0" : {
         "brandName": "SampleBrand",
-        "itemId" : "SampleItemID_0",
+        "itemId" : "shirt_short_a",
         "itemType" : "Shirt_Short",
         "itemColor" : "Dark_Blue",
-        "itemImagePaht" : "resource/item_image/sampleBrand_sampleId0_Image.png",
+        "itemImagePaht" : "resource/item_image/samplebrand_shirt_short_a_Image.png",
         "assetPathList" : {
-            "free" : "resource/asset_bundles/samplebrand_sampleitemid_0_free"
+            "free" : "resource/asset_bundles/samplebrand_shirt_short_a_free"
         }
     },
     "1" : {
         "brandName": "SampleBrand",
-        "itemId" : "SampleItemID_1",
+        "itemId" : "shirt_short_b",
         "itemType" : "Shirt_Short",
         "itemColor" : "Light_Blue",
-        "itemImagePaht" : "resource/item_image/sampleBrand_sampleId1_Image.png",
+        "itemImagePaht" : "resource/item_image/samplebrand_shirt_short_b_Image.png",
         "assetPathList" : {
-            "small" : "resource/asset_bundles/samplebrand_sampleitemid_1_small",
-            "medium" : "resource/asset_bundles/samplebrand_sampleitemid_1_medium",
-            "large" : "resource/asset_bundles/samplebrand_sampleitemid_1_large"
-        }
-    },
-    "2" : {
-        "brandName": "SampleBrand",
-        "itemId" : "SampleItemID_2",
-        "itemType" : "Shirt_Short",
-        "itemColor" : "Dark_Purple",
-        "itemImagePaht" : "resource/item_image/sampleBrand_sampleId2_Image.png",
-        "assetPathList" : {
-            "s" : "resource/asset_bundles/sampleBrand_sampleId2_s.txt",
-            "m" : "resource/asset_bundles/sampleBrand_sampleId2_m.txt",
-            "l" : "resource/asset_bundles/sampleBrand_sampleId2_l.txt",
-            "xl" : "resource/asset_bundles/sampleBrand_sampleId2_xl.txt",
-            "xxl" : "resource/asset_bundles/sampleBrand_sampleId2_xxl.txt"
+            "small" : "resource/asset_bundles/samplebrand_shirt_short_b_small",
+            "medium" : "resource/asset_bundles/samplebrand_shirt_short_b_medium",
+            "large" : "resource/asset_bundles/samplebrand_shirt_short_b_large"
         }
     }
 }
