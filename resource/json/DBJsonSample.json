@@ -1,5 +1,5 @@
 {
-     "0" : {
+    "0" : {
         "brandName": "SampleBrand",
         "itemId" : "shirt_short_a",
         "itemType" : "Shirt_Short",
@@ -19,6 +19,76 @@
             "small" : "resource/asset_bundles/samplebrand_shirt_short_b_small",
             "medium" : "resource/asset_bundles/samplebrand_shirt_short_b_medium",
             "large" : "resource/asset_bundles/samplebrand_shirt_short_b_large"
+        }
+    },
+    "2" : {
+        "brandName": "SampleBrand",
+        "itemId" : "shirt_long_a",
+        "itemType" : "Shirt_Long",
+        "itemColor" : "Light_Blue",
+        "itemImagePaht" : "resource/item_image/samplebrand_shirt_long_a_Image.png",
+        "assetPathList" : {
+            "small" : "resource/asset_bundles/samplebrand_shirt_long_a_small",
+            "medium" : "resource/asset_bundles/samplebrand_shirt_long_a_medium",
+            "large" : "resource/asset_bundles/samplebrand_shirt_long_a_large"
+        }
+    },
+    "3" : {
+        "brandName": "SampleBrand",
+        "itemId" : "shirt_long_b",
+        "itemType" : "Shirt_Long",
+        "itemColor" : "Light_Blue",
+        "itemImagePaht" : "resource/item_image/samplebrand_shirt_long_b_Image.png",
+        "assetPathList" : {
+            "free" : "resource/asset_bundles/samplebrand_shirt_long_b_free"
+        }
+    },
+    "4" : {
+        "brandName": "SampleBrand",
+        "itemId" : "pants_short_a",
+        "itemType" : "Pants_Short",
+        "itemColor" : "Dark_Blue",
+        "itemImagePaht" : "resource/item_image/samplebrand_pants_short_a_Image.png",
+        "assetPathList" : {
+            "s" : "resource/asset_bundles/samplebrand_pants_short_a_s",
+            "m" : "resource/asset_bundles/samplebrand_pants_short_a_m",
+            "l" : "resource/asset_bundles/samplebrand_pants_short_a_l"
+        }
+    },
+    "5" : {
+        "brandName": "SampleBrand",
+        "itemId" : "pants_short_b",
+        "itemType" : "Pants_Short",
+        "itemColor" : "Light_Blue",
+        "itemImagePaht" : "resource/item_image/samplebrand_pants_short_b_Image.png",
+        "assetPathList" : {
+            "small" : "resource/asset_bundles/samplebrand_pants_short_b_small",
+            "medium" : "resource/asset_bundles/samplebrand_pants_short_b_medium",
+            "large" : "resource/asset_bundles/samplebrand_pants_short_b_large"
+        }
+    },
+    "6" : {
+        "brandName": "SampleBrand",
+        "itemId" : "pants_long_a",
+        "itemType" : "Pants_Long",
+        "itemColor" : "Light_Blue",
+        "itemImagePaht" : "resource/item_image/samplebrand_pants_long_a_Image.png",
+        "assetPathList" : {
+            "small" : "resource/asset_bundles/samplebrand_pants_long_a_small",
+            "medium" : "resource/asset_bundles/samplebrand_pants_long_a_medium",
+            "large" : "resource/asset_bundles/samplebrand_pants_long_a_large"
+        }
+    },
+    "7" : {
+        "brandName": "SampleBrand",
+        "itemId" : "pants_long_b",
+        "itemType" : "Pants_Long",
+        "itemColor" : "Light_Blue",
+        "itemImagePaht" : "resource/item_image/samplebrand_pants_long_b_Image.png",
+        "assetPathList" : {
+            "small" : "resource/asset_bundles/samplebrand_pants_long_b_small",
+            "medium" : "resource/asset_bundles/samplebrand_pants_long_b_medium",
+            "large" : "resource/asset_bundles/samplebrand_pants_long_b_large"
         }
     }
 }
