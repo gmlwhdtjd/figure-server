@@ -83,12 +83,10 @@
         "brandName": "SampleBrand",
         "itemId" : "pants_long_b",
         "itemType" : "Pants_Long",
-        "itemColor" : "Light_Blue",
+        "itemColor" : "Dark_Red",
         "itemImagePaht" : "resource/item_image/samplebrand_pants_long_b_Image.png",
         "assetPathList" : {
-            "small" : "resource/asset_bundles/samplebrand_pants_long_b_small",
-            "medium" : "resource/asset_bundles/samplebrand_pants_long_b_medium",
-            "large" : "resource/asset_bundles/samplebrand_pants_long_b_large"
+            "free" : "resource/asset_bundles/samplebrand_pants_long_b_free"
         }
     }
 }
