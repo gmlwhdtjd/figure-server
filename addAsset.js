@@ -97,10 +97,9 @@ else {
                         console.log(error)
                     } else {    
                         console.log("The file was saved!")
+                        db.close()
                     }
                 })
-
-                db.close()
             }
         })
     }
